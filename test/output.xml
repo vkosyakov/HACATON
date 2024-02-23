@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-23T14:24:46.163600" rpa="false" schemaversion="5">
+<suite id="s1" name="testRegistrationOrder" source="C:\Users\vlad\PycharmProjects\Hacaton\test\testRegistrationOrder.robot">
+<test id="s1-t1" name="Test Registration Order" line="7">
+<kw name="Open" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:24:46.454592" level="INFO">Opening browser 'Chrome' to base url 'https://www.citilink.ru'.</msg>
+<arg>${urlLogin}</arg>
+<arg>${browserName}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-23T14:24:46.453596" elapsed="9.469223"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-23T14:24:55.923817" elapsed="0.349022"/>
+</kw>
+<arg>${urlLogin}</arg>
+<arg>${browserName}</arg>
+<status status="PASS" start="2024-02-23T14:24:46.452599" elapsed="9.821219"/>
+</kw>
+<kw name="Login" owner="resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:24:56.277817" level="INFO">Clicking element 'xpath:.//span[@class = 'en3k2720 e106ikdt0 css-1y9ljh1 e1gjr6xo0' and text() = 'Войти'][1]'.</msg>
+<arg>xpath:.//span[@class = 'en3k2720 e106ikdt0 css-1y9ljh1 e1gjr6xo0' and text() = 'Войти'][1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-23T14:24:56.276818" elapsed="0.543000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:24:56.820820" level="INFO">Typing text 'kosyakov.v.a@merlion.ru' into text field 'name:login'.</msg>
+<arg>name:login</arg>
+<arg>${login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-23T14:24:56.819818" elapsed="0.528999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:24:57.349823" level="INFO">Typing text 'Vlad02061998*vlad' into text field 'name:pass'.</msg>
+<arg>name:pass</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-23T14:24:57.349823" elapsed="0.784002"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>xpath://button[@class = 'e4uhfkv0 css-1nvnwij e4mggex0']/span[text() = 'Войти']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-23T14:24:58.133825" elapsed="1.726224"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:24:59.861051" level="INFO">Clicking element 'xpath://button[@class = 'e4uhfkv0 css-1nvnwij e4mggex0']/span[text() = 'Войти']'.</msg>
+<arg>xpath://button[@class = 'e4uhfkv0 css-1nvnwij e4mggex0']/span[text() = 'Войти']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-23T14:24:59.860049" elapsed="4.782828"/>
+</kw>
+<arg>${login}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-02-23T14:24:56.275818" elapsed="8.367059"/>
+</kw>
+<kw name="Go to Shopping Cart and Registration Order" owner="resources">
+<kw name="Wait and Click" owner="resources">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-23T14:25:04.664882" elapsed="1.629994"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:25:06.295880" level="INFO">Clicking element 'xpath:.//div[@class = 'css-1wyvf5z eyoh4ac0']/span[text() ='Корзина'][1]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-23T14:25:06.295880" elapsed="56.916894"/>
+</kw>
+<arg>xpath:.//div[@class = 'css-1wyvf5z eyoh4ac0']/span[text() ='Корзина'][1]</arg>
+<status status="PASS" start="2024-02-23T14:25:04.663875" elapsed="58.548899"/>
+</kw>
+<kw name="Wait and Click" owner="resources">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-23T14:26:03.213903" elapsed="0.146868"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:26:03.361774" level="INFO">Clicking element 'xpath:.//button[@class = 'e4uhfkv0 css-ki69qx e4mggex0']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-23T14:26:03.361774" elapsed="1.824036"/>
+</kw>
+<arg>xpath:.//button[@class = 'e4uhfkv0 css-ki69qx e4mggex0']</arg>
+<status status="PASS" start="2024-02-23T14:26:03.213903" elapsed="1.971907"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>xpath:.//span[text() = 'Оформление заказа']</arg>
+<arg>Оформление заказа</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-02-23T14:26:05.186810" elapsed="1.443993"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:26:06.659802" level="INFO">Element 'xpath:.//div/span[text() = 'Владислав Косяков']' contains text 'Владислав Косяков'.</msg>
+<arg>xpath:.//div/span[text() = 'Владислав Косяков']</arg>
+<arg>Владислав Косяков</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-02-23T14:26:06.631805" elapsed="0.027997"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:26:06.660804" level="INFO">Clicking element 'xpath:.//label/div[@class = 'fresnel-container fresnel-greaterThanOrEqual-tabletP 'and text() = 'Самовывоз']'.</msg>
+<arg>xpath:.//label/div[@class = 'fresnel-container fresnel-greaterThanOrEqual-tabletP 'and text() = 'Самовывоз']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-23T14:26:06.659802" elapsed="0.157008"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath:.//h4[text() = 'Подтверждение и оплата']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-02-23T14:26:06.816810" elapsed="0.322142"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:26:07.139943" level="INFO">Clicking element 'xpath:.//button/span[@class = 'css-1xdhyk6 e1hf2t4f0' and text() = 'Выбрать другой пункт самовывоза']'.</msg>
+<arg>xpath:.//button/span[@class = 'css-1xdhyk6 e1hf2t4f0' and text() = 'Выбрать другой пункт самовывоза']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-23T14:26:07.139943" elapsed="0.175004"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-23T14:26:12.316957" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-23T14:26:07.314947" elapsed="5.002010"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:26:12.355957" level="INFO">${namePVD} = Транзитный пункт выдачи Ситилинк г. Сафоново</msg>
+<var>${namePVD}</var>
+<arg>xpath:.//span[@class = 'e1ys5m360 e106ikdt0 css-fscbmu e1gjr6xo0' and @data-meta-name = 'SelfDeliveryStoresList__title']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-23T14:26:12.317957" elapsed="0.038000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:26:12.356960" level="INFO">Clicking element 'xpath:.//span[@class = 'css-1xdhyk6 e1hf2t4f0' and text() = 'Выбрать']'.</msg>
+<arg>xpath:.//span[@class = 'css-1xdhyk6 e1hf2t4f0' and text() = 'Выбрать']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-23T14:26:12.356960" elapsed="0.124998"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-23T14:26:12.512959" level="INFO">${namePVD2} = Транзитный пункт выдачи Ситилинк г. Сафоново</msg>
+<var>${namePVD2}</var>
+<arg>xpath:.//span[@class = 'e1ys5m360 e106ikdt0 css-fscbmu e1gjr6xo0'][1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-23T14:26:12.481958" elapsed="0.031001"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${namePVD}</arg>
+<arg>${namePVD2}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T14:26:12.512959" elapsed="0.001001"/>
+</kw>
+<status status="PASS" start="2024-02-23T14:25:04.662878" elapsed="67.851082"/>
+</kw>
+<kw name="Close" owner="resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-23T14:26:12.514955" elapsed="2.423041"/>
+</kw>
+<status status="PASS" start="2024-02-23T14:26:12.514955" elapsed="2.424044"/>
+</kw>
+<status status="PASS" start="2024-02-23T14:24:46.451597" elapsed="88.490402"/>
+</test>
+<status status="PASS" start="2024-02-23T14:24:46.166602" elapsed="88.779402"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="testRegistrationOrder">testRegistrationOrder</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
