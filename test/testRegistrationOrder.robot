@@ -7,7 +7,7 @@ Variables    ../resources/variables.py
 Test Go to Shopping Cart and Registration Order by Autorized User
     [Setup]    Open    ${urlLogin}    ${browserName}
     [Teardown]    Close
-    Login    ${login}    ${password}\
+    Login    ${login}    ${password}
     #Переход в корзину
     Go to Shopping Cart
     #Провекра пункта выдачи заказа
