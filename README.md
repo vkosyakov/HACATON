@@ -1,4 +1,4 @@
-Структура австоетстов.
+Структура автоетстов.
 В папке resources описаны кейворды (resources.robot) и переменные (variables.py):
 
 urlLogin = 'https://www.citilink.ru'
