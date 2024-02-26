@@ -3,8 +3,8 @@ urlLogin = 'https://www.citilink.ru'
 urlAddCart = 'https://www.citilink.ru/product/noutbuk-huawei-matebook-d-i5-12450h-16gb-ssd512gb-14-ips-fhd-noos-grey-2002275/'
 urlSearch = 'https://www.citilink.ru/'
 urlSelectedProduct = 'https://www.citilink.ru/search/?text=Ноутбуки'
-browserName = 'Chrome'
-
+browserChrome = 'Chrome'
+browserFFox = 'FireFox'
 
 #Users
 login = '***'
