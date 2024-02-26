@@ -40,9 +40,9 @@ Go to Shopping Cart
 Check PVD
     Wait Enabled and Click    xpath:.//label/div[@class = 'fresnel-container fresnel-greaterThanOrEqual-tabletP 'and text() = 'Самовывоз']
     scroll element into view    xpath:.//h4[text() = 'Подтверждение и оплата']
-    Wait Enabled and Click    xpath:.//span[contains(text(),'пункт')]
+    Wait Enabled and Click    xpath:.//span[contains(text(),'Выбрать')]
     sleep    5
-    ${namePVD}=    get text    xpath:.//span[@class = 'e1ys5m360 e106ikdt0 css-fscbmu e1gjr6xo0' and @data-meta-name = 'SelfDeliveryStoresList__title']
+    ${namePVD}=    get text    xpath:.//span[@data-meta-name = 'SelfDeliveryStoresList__title'][1]
     click element    xpath:.//span[@class = 'css-1xdhyk6 e1hf2t4f0' and text() = 'Выбрать']
     ${namePVD2}=    get text    xpath:.//span[@class = 'e1ys5m360 e106ikdt0 css-fscbmu e1gjr6xo0'][1]
     should be equal     ${namePVD}    ${namePVD2}
